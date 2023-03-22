@@ -1,7 +1,7 @@
 // mapped types
 type Fruit = "apple" | "orange" | "strawberry";
 type FruitNumbers = {
-  readonly [P in Fruit]: number;
+  readonly [Key in Fruit]: number;
 };
 const number: FruitNumbers = {
   apple: 3,
